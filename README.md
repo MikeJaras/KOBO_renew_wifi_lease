@@ -1,5 +1,5 @@
 # KOBO_renew_wifi_lease
-Script to run udhcpc from Xcsoar tools menu. Will renew ip address lease so wifi stays connected.
+Script to run udhcpc from Xcsoar tools menu on Kobo busybox. Will renew ip address lease so wifi stays connected.
 Solves my problem when I have the Kobo to connect to ESP32 softAP wifi and lease time is set to two hours without possibility to change it. 
 The script will run udhcpc in a loop with a sleep of 30 sec. When it runs it will do a dhcp renew.
 
