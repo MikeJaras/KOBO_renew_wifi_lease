@@ -1,0 +1,6 @@
+#!/bin/sh
+log=/mnt/onboard/XCSoarData/kobo/scripts/wifi_daemon_log
+
+echo $(date '+%y-%m-%d %H:%M:%S') "udhcpc renew (wifi_restart)" | tee -a $log	
+/sbin/udhcpc -S -i eth0 -s /etc/udhcpc.d/default.script -t15 -T10 -A3 -f -q
+sleep 1800

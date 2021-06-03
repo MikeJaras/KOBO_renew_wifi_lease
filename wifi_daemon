@@ -1,0 +1,6 @@
+#!/bin/sh
+
+while [ 1 ]; do
+	/mnt/onboard/XCSoarData/kobo/scripts/wifi_renew
+done
+

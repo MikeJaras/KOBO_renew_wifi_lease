@@ -1,0 +1,8 @@
+#!/bin/sh
+log=/mnt/onboard/XCSoarData/kobo/scripts/wifi_daemon_log
+killall wifi_daemon
+killall wifi_renew
+sleep 1
+echo $(date '+%y-%m-%d %H:%M:%S') "wifi_daemon_MJ starting (AAA_wifi)" | tee -a $log
+/mnt/onboard/XCSoarData/kobo/scripts/wifi_daemon &
+

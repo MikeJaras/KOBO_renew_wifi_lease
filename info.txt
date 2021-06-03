@@ -1,0 +1,7 @@
+
+place in /mnt/onboard/XCSoarData/kobo/scripts
+
+to use:
+start wifi the normal way, then select AA_wifi from the tools page.
+
+note that the scripts must be executable;
